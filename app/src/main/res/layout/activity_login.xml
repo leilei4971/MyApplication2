@@ -38,7 +38,7 @@
         android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="11dp"
-        />
+        android:id="@+id/textView" />
 
     <LinearLayout
         android:id="@+id/Login_LinearLayout_Phone"
@@ -80,7 +80,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="180dp"
-        >
+        android:id="@+id/linearLayout">
         <LinearLayout
             android:layout_width="80dp"
             android:layout_height="48dp"
@@ -120,15 +120,37 @@
         android:layout_below="@id/Login_LinearLayout_Phone"
         android:visibility="gone"
         />
+
     <TextView
         android:id="@+id/Login_TextView_Send"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="登陆"
-        android:textSize="17sp"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="52dp"
         android:background="#EA566C"
-        android:layout_alignParentBottom="true"
         android:gravity="center"
-        />
+        android:text="登陆"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EA566C"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:layout_alignBottom="@+id/Login_TextView_Send"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_toEndOf="@+id/textView" />
+
 </RelativeLayout>
