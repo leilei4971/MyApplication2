@@ -11,7 +11,7 @@ import android.view.View;
  * Created by Administrator on 2017/10/19.
  */
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
