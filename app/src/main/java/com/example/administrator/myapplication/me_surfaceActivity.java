@@ -12,11 +12,11 @@ public class me_surfaceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me_surface);
-        ImageView me_back=(ImageView)findViewById(R.id.me_back);
-//       me_back.setOnClickListener(this);
+//        ImageView imageView18=(ImageView)findViewById(R.id.imageView18);
+//       imageView18.setOnClickListener(this);
     }
     public void onClick(View view){
-        Intent intent=new Intent(me_surfaceActivity .this,MainActivity.class);
+        Intent intent=new Intent(me_surfaceActivity.this,MainActivity.class);
         startActivity(intent);
     }
 }

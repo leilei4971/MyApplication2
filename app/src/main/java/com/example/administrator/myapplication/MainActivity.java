@@ -8,20 +8,24 @@ package com.example.administrator.myapplication;
         import android.widget.ImageView;
         import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageView me_back=(ImageView)findViewById(R.id.me_back);
-//       me_back.setOnClickListener(this);
+       ImageView me_back=(ImageView)findViewById(R.id.me_back);
+        me_back.setOnClickListener(this);
+
     }
-    public void onClick(View view){
+
+    @Override
+    public void onClick(View view) {
         Intent intent=new Intent(MainActivity.this,me_surfaceActivity.class);
         startActivity(intent);
     }
+
 
 
     }
