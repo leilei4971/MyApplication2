@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
        ImageView me_back=(ImageView)findViewById(R.id.me_back);
         me_back.setOnClickListener(this);
+        ImageView faxian_back=(ImageView)findViewById(R.id.faxian_back);
+        faxian_back.setOnClickListener(this);
 
     }
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         Intent intent=new Intent(MainActivity.this,me_surfaceActivity.class);
         startActivity(intent);
+
     }
 
 
